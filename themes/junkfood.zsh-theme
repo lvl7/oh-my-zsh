@@ -4,15 +4,12 @@
 # Totally ripped-off Dallas theme—svn & git required.
 # ------------------------------------------------------------------------
 
-<<<<<<< HEAD
-=======
 # Grab the current date (%W) and time (%t):
 JUNKFOOD_TIME_="%{$fg_bold[red]%}#%{$fg_bold[white]%}( %{$fg_bold[yellow]%}%W%{$reset_color%}@%{$fg_bold[white]%}%t )( %{$reset_color%}"
 
 # Grab the current machine name 
 JUNKFOOD_MACHINE_="%{$fg_bold[blue]%}%m%{$fg[white]%} ):%{$reset_color%}"
 
->>>>>>> 53412de75c982a07fac902e8deec929c4fe32abc
 # Grab the current username 
 JUNKFOOD_CURRENT_USER_="%{$fg_bold[white]%}# %{$fg_bold[green]%}%n%{$fg_bold[white]%}. %{$reset_color%}"
 #
