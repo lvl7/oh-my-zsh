@@ -10,11 +10,11 @@ JUNKFOOD_CURRENT_USER_="%{$fg_bold[white]%}#%{$reset_color%} %{$fg[magenta]%}%n%
 
 # Grab the current machine name 
 #bold JUNKFOOD_MACHINE_="%{$fg_bold[blue]%}%m%{$fg_bold[white]%}. %{$reset_color%}"
-JUNKFOOD_MACHINE_="%{$fg[green]%}%m%{$reset_color%} in "
+JUNKFOOD_MACHINE_="%{$fg[blue]%}%m%{$reset_color%} in "
 
 # Grab the current filepath, use shortcuts: ~/Desktop
 # Append the current git branch and svn branch, if in a git repository: ~aw at master/master
-JUNKFOOD_LOCA_="%{$fg[blue]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
+JUNKFOOD_LOCA_="%{$fg[green]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
 #
 # For the git and svn prompt
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[white]%}. %{$reset_color%}%{$fg[white]%}git at %{$fg_bold[white]%}"
