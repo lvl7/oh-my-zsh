@@ -4,14 +4,6 @@
 # Totally ripped-off Dallas theme—svn & git required.
 # ------------------------------------------------------------------------
 
-# Grab the current date (%W) and time (%t):
-#bold JUNKFOOD_TIME_="%{$fg_bold[red]%}#%{$fg_bold[white]%}( %{$fg_bold[yellow]%}%W%{$reset_color%}@%{$fg_bold[white]%}%t )( %{$reset_color%}"
-JUNKFOOD_TIME_="%{$fg[red]%}#%{$fg_bold[white]%}( %{$fg[yellow]%}%W%{$reset_color%}@%{$fg_bold[white]%}%t )( %{$reset_color%}"
-
-# Grab the current machine name 
-#bold JUNKFOOD_MACHINE_="%{$fg_bold[blue]%}%m%{$fg[white]%} ):%{$reset_color%}"
-JUNKFOOD_MACHINE_="%{$fg[blue]%}%m%{$fg[white]%} ):%{$reset_color%}"
-
 # Grab the current username 
 #bold JUNKFOOD_CURRENT_USER_="%{$fg_bold[white]%}# %{$fg_bold[green]%}%n%{$fg_bold[white]%}. %{$reset_color%}"
 JUNKFOOD_CURRENT_USER_="%{$fg_bold[white]%}#%{$reset_color%} %{$fg[magenta]%}%n%{$reset_color%} on "
@@ -20,13 +12,9 @@ JUNKFOOD_CURRENT_USER_="%{$fg_bold[white]%}#%{$reset_color%} %{$fg[magenta]%}%n%
 #bold JUNKFOOD_MACHINE_="%{$fg_bold[blue]%}%m%{$fg_bold[white]%}. %{$reset_color%}"
 JUNKFOOD_MACHINE_="%{$fg[green]%}%m%{$reset_color%} in "
 
-# Grab the current date (%W) and time (%t):
-#bold JUNKFOOD_TIME_="%{$fg_bold[yellow]%}%W%{$reset_color%} at %{$fg_bold[magenta]%}%T%{$fg_bold[white]%}. %{$reset_color%}"
-JUNKFOOD_TIME_="%{$fg[yellow]%}%W%{$reset_color%} at %{$fg[magenta]%}%T%{$fg_bold[white]%}. %{$reset_color%}"
-
 # Grab the current filepath, use shortcuts: ~/Desktop
 # Append the current git branch and svn branch, if in a git repository: ~aw at master/master
-JUNKFOOD_LOCA_="%{$fg[cyan]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
+JUNKFOOD_LOCA_="%{$fg[blue]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
 #
 # For the git and svn prompt
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[white]%}. %{$reset_color%}%{$fg[white]%}git at %{$fg_bold[white]%}"
