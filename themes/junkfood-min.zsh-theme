@@ -17,8 +17,8 @@ JUNKFOOD_MACHINE_="%{$fg[blue]%}%m%{$reset_color%} in "
 JUNKFOOD_LOCA_="%{$fg[green]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
 #
 # For the git and svn prompt
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[white]%}. %{$reset_color%}%{$fg[white]%}git at %{$fg_bold[white]%}"
-ZSH_THEME_SVN_PROMPT_PREFIX="%{$fg_bold[white]%}. %{$reset_color%}%{$fg[white]%}svn at %{$fg_bold[white]%}"
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} using %{$fg_bold[white]%}"
+ZSH_THEME_SVN_PROMPT_PREFIX="%{$reset_color%} using %{$fg_bold[white]%}"
 
 # Close it all off by resetting the color and styles.
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -27,14 +27,14 @@ ZSH_THEME_SVN_PROMPT_SUFFIX="%{$reset_color%}"
 # Do nothing if the branch is clean (no changes).
 #bold ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
 #bold ZSH_THEME_SVN_PROMPT_CLEAN="%{$fg_bold[green]%}✔"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}%{$fg[green]%}✔"
-ZSH_THEME_SVN_PROMPT_CLEAN="%{$reset_color%}%{$fg[green]%}✔"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}[git]%{$reset_color%}%{$fg[green]%}✔"
+ZSH_THEME_SVN_PROMPT_CLEAN="%{$reset_color%}[svn]%{$reset_color%}%{$fg[green]%}✔"
 
 # Add 3 cyan ✗s if this branch is diiirrrty! Dirty branch!
 #bold ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}✗✗✗"
 #bold ZSH_THEME_SVN_PROMPT_DIRTY="%{$fg_bold[red]%}✗✗✗"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}%{$fg[red]%}✗✗✗"
-ZSH_THEME_SVN_PROMPT_DIRTY="%{$reset_color%}%{$fg[red]%}✗✗✗"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}[git]%{$reset_color%}%{$fg[red]%}✗✗✗"
+ZSH_THEME_SVN_PROMPT_DIRTY="%{$reset_color%}[svn]%{$reset_color%}%{$fg[red]%}✗✗✗"
 
 # Put it all together!
 PROMPT="$JUNKFOOD_CURRENT_USER_$JUNKFOOD_MACHINE_$JUNKFOOD_LOCA_
