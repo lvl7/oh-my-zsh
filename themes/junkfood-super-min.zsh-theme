@@ -14,7 +14,10 @@ JUNKFOOD_MACHINE_="%{$fg[yellow]%}%m%{$reset_color%} in "
 
 # Grab the current filepath, use shortcuts: ~/Desktop
 # Append the current git branch and svn branch, if in a git repository: ~aw at master/master
-JUNKFOOD_LOCA_="%{$fg[green]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
+#JUNKFOOD_LOCA_="%{$fg[green]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
+JUNKFOOD_LOCA_="%{$fg[yellow]%}%~\$(git_prompt_info)\$(svn_prompt_info)%{$reset_color%}"
+
+JUNKFOOD_SYMBOL=" %{$fg[green]%}⚛%{$reset_color%} "
 #
 # For the git and svn prompt
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} using %{$fg_bold[white]%}"
@@ -37,5 +40,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}[git]%{$reset_color%}%{$fg[red]%}✗
 ZSH_THEME_SVN_PROMPT_DIRTY="%{$reset_color%}[svn]%{$reset_color%}%{$fg[red]%}✗✗✗"
 
 # Put it all together!
-PROMPT="$JUNKFOOD_CURRENT_USER_$JUNKFOOD_MACHINE_$JUNKFOOD_LOCA_
-  "
+#PROMPT="$JUNKFOOD_CURRENT_USER_$JUNKFOOD_MACHINE_$JUNKFOOD_LOCA_
+#  "
+PROMPT="$JUNKFOOD_SYMBOL$JUNKFOOD_LOCA_
+   "
