@@ -86,12 +86,12 @@ else
 fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}on "
-ZSH_THEME_GIT_PROMPT_CLEAN="[git]%{$fg[green]%}${check}%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN="[git]${GREEN}${check}%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="[git]%{$fg[red]%}${ex}%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 ZSH_THEME_SVN_PROMPT_PREFIX="%{$fg[white]%}on "
-ZSH_THEME_SVN_PROMPT_CLEAN="[svn]%{$fg[green]%}${check}%{$reset_color%}"
+ZSH_THEME_SVN_PROMPT_CLEAN="[svn]${GREEN}${check}%{$reset_color%}"
 ZSH_THEME_SVN_PROMPT_DIRTY="[svn]%{$fg[red]%}${ex}%{$reset_color%}"
 ZSH_THEME_SVN_PROMPT_SUFFIX="%{$reset_color%}"
 
