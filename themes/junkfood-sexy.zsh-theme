@@ -1,7 +1,7 @@
 # Junkfood Invader theme
 # --------------------------
 # Lets not export all these colors unless we have to
-if [ -z "$BLACK" ]; then
+if [ -z "$COLORS_SET" ]; then
   if tput setaf 1 &> /dev/null; then
     tput sgr0
 
@@ -71,6 +71,8 @@ if [ -z "$BLACK" ]; then
   for color in $colors; do
     export $color
   done
+
+  export COLORS_SET=1
 fi
 
 ex='✗✗✗ '
@@ -82,7 +84,7 @@ if [[ $(uname -s) == 'Darwin' ]]; then
     # I never really work as root on the ole macbook
     front_thingy='%(?.🍔  .🍟  '
 else
-    front_thingy="%(?.%{$fg[white]%}%(!.#.→)%{$reset_color%} .%{$fg[red]%}%(!.#.→)%{$reset_color%} )"
+    front_thingy="%(?.%{$fg[white]%}%(!.#.$)%{$reset_color%} .%{$fg[red]%}%(!.#.$)%{$reset_color%} )"
 fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}on "
