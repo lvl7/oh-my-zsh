@@ -1,5 +1,5 @@
 if [[ $(uname -s) == 'Darwin' ]]; then
-    front_thingy='👾 '
+    front_thingy='🍔 '
     ex='✗ '
 else
     front_thingy='→ '

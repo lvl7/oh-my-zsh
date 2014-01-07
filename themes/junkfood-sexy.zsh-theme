@@ -80,7 +80,7 @@ return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 if [[ $(uname -s) == 'Darwin' ]]; then
     # I never really work as root on the ole macbook
-    front_thingy='%(?.👾 .%{$fg[red]%}✗%{$reset_color%} '
+    front_thingy='%(?.🍔  .🍟  '
 else
     front_thingy="%(?.%{$fg[white]%}%(!.#.→)%{$reset_color%} .%{$fg[red]%}%(!.#.→)%{$reset_color%} )"
 fi
